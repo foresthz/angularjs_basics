@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html ng-app>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-controller="MyController">
+        <h1>Hello {{ clock }} !</h1>
+    </div>
+
+    <script type="text/javascript">
+        function MyController($scope, $timeout) {
+            $timeout(function () {
+                $scope.clock = 11;
+            }, 1000);
+
+        }
+    </script>
+
+</body>
+
+
+</html>
